@@ -1,0 +1,56 @@
+{
+    "pages": [
+        "pages/tab/home/index",
+        "pages/tab/mine/index",
+        "pages/tab/tools/index",
+        "pages/tab/read/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "@navigationBarBackgroundColor",
+        "navigationBarTitleText": "tiger-mp",
+        "navigationBarTextStyle": "@navigationBarTextStyle",
+        "navigationStyle": "custom"
+    },
+    "tabBar": {
+        "color": "@tabBarColor",
+        "selectedColor": "@tabBarSelectedColor",
+        "backgroundColor": "@tabBarBackgroundColor",
+        "borderStyle": "@tabBarBorderStyle",
+        "list": [
+            {
+                "pagePath": "pages/tab/home/index",
+                "text": "首页",
+                "iconPath": "@iconPathComponent",
+                "selectedIconPath": "@selectedIconPathComponent"
+            },
+            {
+                "pagePath": "pages/tab/read/index",
+                "iconPath": "@iconPathComponent",
+                "selectedIconPath": "@selectedIconPathComponent",
+                "text": "阅读"
+            },
+            {
+                "pagePath": "pages/tab/tools/index",
+                "iconPath": "@iconPathAPI",
+                "selectedIconPath": "@selectedIconPathAPI",
+                "text": "工具"
+            },
+            {
+                "pagePath": "pages/tab/mine/index",
+                "iconPath": "@iconPathCloud",
+                "selectedIconPath": "@selectedIconPathCloud",
+                "text": "我的"
+            }
+        ]
+    },
+    "style": "v2",
+    "useExtendedLib": {
+        "weui": "latest"
+    },
+    "lazyCodeLoading": "requiredComponents",
+    "renderer": "skyline",
+    "darkmode": true,
+    "themeLocation": "theme.json",
+    "resizable": true,
+    "sitemapLocation": "sitemap.json"
+}

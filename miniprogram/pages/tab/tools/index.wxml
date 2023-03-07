@@ -1,0 +1,12 @@
+<!--标题栏-->
+<view style="height: {{navBarHeight}}px;padding-top:{{statusBarHeight}}px" class="nav-bar">
+    <view class="title-text" style="height:{{menuInfo.height}}px;line-height:{{menuInfo.height}}px;">工具</view>
+</view>
+
+<scroll-view scroll-y="true" class="scroll-content" type="custom">
+    <list-view>
+        <view class="tool-cell" wx:for="{{list}}" wx:key="index" wx:for-item="item" wx:for-index="index">
+            {{item.name}}
+        </view>
+    </list-view>
+</scroll-view>
